@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 03</title>
+</head>
+<body>
+	<form><!-- beh <reset> takhdem 3la table -->
+	<fieldset><legend>Identité de connexion</legend>
+	<table>
+		<tr>
+			<td>Login*</td>
+			<td><input type="text" placeholder="Votre login" pattern="*[A-Za-z]" required></td>
+		</tr>
+		<tr>
+			<td>Mot de passe*</td>
+			<td><input type="Password" placeholder="Mot de passe" pattern=".{6,8}" required></td>	
+			<td>Confirmer votre mot de passe*</td>
+			<td><input type="Password" placeholder="Mot de passe" pattern=".{6,8}" required></td>		
+		</tr>
+		<tr>
+			<td>E-mail*</td>
+			<td><input type="email" placeholder="Votre email" required></td>
+		</tr>
+	</table>
+	</fieldset>
+
+	
+	<fieldset>
+		<legend>Vos données personnelles</legend>
+		<table>
+		<tr>
+			<td>Nom*</td>
+			<td><input type="text" placeholder="Votre nom" pattern="*[A-Za-z]" required></td>
+			<td>Prénom*</td>
+			<td><input type="text" placeholder="Votre prénom" pattern="*[A-Za-z]" required></td>
+		</tr>
+		<tr>
+			<td>Date de naissance*</td>
+			<td><input type="date" value="" required></td>
+			<td>Lieu de naissance</td>
+			<td>
+		<input list="lieu" >
+		<datalist id="lieu">
+			<option value="Alger">
+			<option value="Oran">
+			<option value="Constantine">
+			<option value="Chlef">
+			<option value="Annaba">
+			<option value="Tlemcen">
+			<option value="Bejaia">
+			<option value="Blida">
+			<option value="Medéa">
+			<option value="Ouargla">		
+		</datalist>
+		</td>
+		</table>
+		<br>
+
+			<fieldset>
+				<legend required>Le genre*</legend>
+				<input type="radio" name="choix" id="homme" required="true">
+				<label for="homme">Je suis un homme</label>
+				<input type="radio" name="choix" id="femme" required="true">
+				<label for="femme">Je suis une femme</label>
+			</fieldset>
+
+		<table>
+		<tr>
+			<td>Code postal</td>
+			<td><input type="number" maxlength="6" pattern = "[0-9]{6}"></td>
+			<td>Ville</td>
+			<td><input type="text" pattern="*[A-Za-z]"></td>
+		</tr>
+		<br>
+		<tr>
+			<td>Adresse</td>
+		</tr>
+		<tr>
+			<td><input type="text" placeholder="Votre adresse"></td>
+		</tr>
+		</table>
+	</fieldset>
+
+	<fieldset>
+		<legend>Compétences</legend>
+		<table>
+			<td>Spécialité*</td>
+			<td>
+				<select name="Spécialité" required>
+				<optgroup label="Informatique"></optgroup>
+					<option>Base de données</option>
+					<option>Développement web</option>
+					<option>Réseaux</option>
+				<optgroup label="Mathématique"></optgroup>
+					<option>Analyse</option>
+					<option>Statistique</option>
+				</select>
+			</td>
+		</table>
+		<br>
+
+		<input type="checkbox"> HTML5
+		<input type="checkbox">	CSS3
+		<input type="checkbox">	JS
+		<input type="checkbox">	PHP
+		<br>
+
+		<br> Niveau en français <input type="range">
+	</fieldset>
+
+	<input type="submit" value="Valider">
+	<input type="reset" value="Vider">
+	</form>
+
+
+
+</body>
+</html>

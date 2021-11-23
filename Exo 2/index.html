@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 02</title>
+</head>
+<body>
+	<ol type="A" start="5">
+		<li>Entrée principale 1
+			<ul>
+				<li>Entrée secondaire 1</li>
+				<li>Entrée secondaire 2
+					<ol type="I" start="4" reversed="reversed">
+						<li>Première entrée de niveau 3</li>
+						<li>Deuxième entrée de niveau 3</li>
+						<li>Troisième entrée de niveau 3</li>
+					</ol>
+				</li>
+				<li>Entrée secondaire 3</li>
+			</ul>
+		</li>
+		<li>Entrée principale 2</li>
+		<li>Entrée principale 3</li>		
+	</ol>
+	<p> Bilan des départements </p>
+	<!-- je voulais faire un align="center" dans la phrase [Bilan des départements], mais dans la photo du TD ce n'est pas vraiment clair si le tableau est au centre avec la phrase ou pas -->
+	<table border="1">
+		<tr>
+			<td colspan="2" rowspan="2"></td>
+			<td rowspan="2"><strong>Année</strong></td>
+			<td align="center" colspan="2"><strong>Bilan</strong></td>
+		</tr>
+	 	<tr>
+	 		<td><strong>Recettes</strong></td>
+	 		<td><strong>Dépenses</strong></td>
+	 	</tr>
+	 	<tr>
+	 		<td rowspan="4">Département</td>
+	 		<td rowspan="2">Informatique</td>
+	 		<td>2012</td>
+	 		<td>53</td>
+	 		<td>50</td>
+	 	</tr>
+	 	<tr>
+	 		<td>2013</td>
+	 		<td>56</td>
+	 		<td>50</td>	 		
+	 	</tr>
+	 	<tr>
+	 		<td rowspan="2">Mathématiques</td>
+	 		<td>2012</td>
+	 		<td>44</td>
+	 		<td>43</td>	 		
+	 	</tr>
+	 	<tr>
+	 		<td>2013</td>
+	 		<td>48</td>
+	 		<td>42</td>	 		
+	 	</tr>
+	 	<tr>
+	 		<td colspan="2"></td>
+	 		<td>Total</td>
+	 		<td>201</td>
+	 		<td>195</td>	 		
+	 	</tr>
+	</table>
+
+</body>
+</html>
